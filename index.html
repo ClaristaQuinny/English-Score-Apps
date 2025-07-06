@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Score | By Group 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>✨ English Score ✨</h1>
+            <p class="subtitle"> Advanced Writing Analysis</p>
+        </header>
+
+        <main>
+            <div class="input-card">
+                <textarea id="text-input" placeholder="Enter your English writing here..."></textarea>
+                <button id="analyze-btn">Analyze Now</button>
+            </div>
+
+            <!-- Area untuk menampilkan hasil atau loading spinner -->
+            <div id="loader" class="loader" style="display: none;"></div>
+            <div id="error-message-box" class="error-box" style="display: none;"></div>
+            
+            <!-- Kontainer untuk semua hasil analisis -->
+            <div id="analysis-results" style="display: none;">
+                
+                <!-- Bagian Skor Penilaian -->
+                <h2 class="section-title">Writing Score Analysis</h2>
+                <div id="scores-grid" class="scores-grid">
+                    <!-- Skor akan diisi oleh JavaScript -->
+                </div>
+
+                <!-- Bagian Perbandingan Teks -->
+                <h2 class="section-title">Text Comparison</h2>
+                <div class="comparison-card">
+                    <div class="text-box original">
+                        <h3>Original Text</h3>
+                        <p id="original-text"></p>
+                    </div>
+                    <div class="text-box corrected">
+                        <h3>✅ Full Corrected Text</h3>
+                        <p id="corrected-text"></p>
+                    </div>
+                </div>
+
+                <!-- Bagian Detail Kesalahan -->
+                <h2 class="section-title">Error Details & Suggestions</h2>
+                <div id="errors-list" class="errors-list">
+                    <!-- Daftar kesalahan akan diisi oleh JavaScript -->
+                </div>
+
+            </div>
+        </main>
+        
+        <footer>
+            Made By Group 6 &copy; 2025 - Advanced Writing Analysis
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
