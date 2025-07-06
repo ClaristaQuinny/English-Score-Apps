@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         errorItem.innerHTML = `
             <span class="error-message-text">${match.message}</span>
-            <strong class="error-suggestion">Saran: ${suggestion}</strong>
+            <strong class="error-suggestion">Suggestion : ${suggestion}</strong>
             <span class="error-category">${match.category}</span>
         `;
         return errorItem;
